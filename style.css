@@ -1,9 +1,80 @@
+:root {
+  --font-family-all: "Work Sans", sans-serif;
+  --font-family-h: "Amatic SC", sans-serif;
+}
+
 body {
-  /* margin: 0;
-    padding: 0; */
+  margin: 0;
+  padding: 0;
+  font-family: var(--font-family-all);
+
+  header {
+    color: white;
+    padding: 70px 70px;
+    text-align: center;
+    h1 {
+      font-family: var(--font-family-h);
+    }
+    a {
+      color: white;
+    }
+    p {
+      font-family: var(--font-family-all);
+    }
+
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+      url("images/lyon.avif");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
   main {
-    section {
-      background-image: ;
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+
+    h2 {
+      font-family: var(--font-family-h);
+    }
+    p {
+      font-family: var(--font-family-all);
+    }
+    section:first-child {
+      display: flex;
+      justify-content: space-around;
+    }
+
+    section:nth-child(2) {
+      display: flex;
+      justify-content: space-around;
+    }
+    section:nth-child(3) {
+      display: flex;
+      justify-content: space-around;
+    }
+  }
+
+  footer {
+    background-color: rgb(58, 57, 57);
+    font-family: Arial, sans-serif;
+    color: white;
+    .container {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-evenly;
+      gap: 20px;
+      padding: 20px;
+    }
+    .copyright {
+      padding: 20px;
+      background-color: rgb(35, 35, 35);
+      text-align: center;
+    }
+    .last-space {
+      background-color: rgb(58, 57, 57);
+      height: 20px;
     }
   }
 }
