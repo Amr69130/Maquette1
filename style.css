@@ -10,8 +10,13 @@ body {
 
   header {
     color: white;
-    padding: 70px 70px;
+    padding: 90px 90px;
     text-align: center;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+      url("images/lyon.avif");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
     h1 {
       font-family: var(--font-family-h);
     }
@@ -21,38 +26,63 @@ body {
     p {
       font-family: var(--font-family-all);
     }
-
-    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
-      url("images/lyon.avif");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
   }
 
   main {
     margin-top: 10px;
-    display: flex;
-    flex-direction: column;
     text-align: center;
-
     h2 {
       font-family: var(--font-family-h);
     }
     p {
       font-family: var(--font-family-all);
     }
-    section:first-child {
+    #cuisine {
+      margin-top: 30px;
+      margin-left: 30px;
       display: flex;
-      justify-content: space-around;
+      justify-content: center;
+      align-items: center;
+      div {
+        padding-left: 30px;
+        text-align: left;
+      }
+    }
+    #plats {
+      display: flex;
+      justify-content: space-evenly;
+      align-items: center;
+      text-align: center;
+      .card {
+        width: 27%;
+        border: solid 1px gray;
+        background-color: rgb(250, 253, 255);
+        box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3);
+        height: 450px;
+        padding: 10px;
+        img {
+          height: 200px;
+          width: 200px;
+          object-fit: cover;
+        }
+      }
     }
 
-    section:nth-child(2) {
-      display: flex;
-      justify-content: space-around;
-    }
-    section:nth-child(3) {
-      display: flex;
-      justify-content: space-around;
+    #restaurants {
+      div {
+        display: flex;
+        justify-content: space-evenly;
+        margin-bottom: 50px;
+        section {
+          width: 400px;
+          img {
+            width: 300px;
+            height: 300px;
+            object-fit: cover;
+            text-align: center;
+          }
+        }
+      }
     }
   }
 
